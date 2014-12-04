@@ -1,12 +1,12 @@
-# object-cleaner  [![Dependency Status](https://david-dm.org/dani/objCleaner.svg)](https://david-dm.org/dani/objCleaner)
+# object-cleaner  [![Dependency Status](https://david-dm.org/danibram/object-cleaner.svg)](https://david-dm.org/danibram/object-cleaner)
 
 A little function to clean dirty Objects, find any array with lenght one and and put his content without array.
 
 ## Getting Started
-Install the module with: `npm install objCleaner`
+Install the module with: `npm install object-cleaner`
 
 ```javascript
-var objCleaner = new require('objCleaner');
+var objCleaner = new require('object-cleaner');
 objCleaner(Object_to_clean); // Object_cleaned
 ```
 
