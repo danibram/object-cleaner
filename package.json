@@ -1,0 +1,46 @@
+{
+  "name": "object-cleaner",
+  "description": "A little function to clean dirty arrays in Objects.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/danibram/object-cleaner",
+  "author": {
+    "name": "Daniel Biedma Ramos",
+    "email": "info@danibram.es"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danibram/object-cleaner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danibram/object-cleaner/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/danibram/object-cleaner/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/objCleaner",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt mochaTest"
+  },
+  "devDependencies": {
+    "assert": "~1.1.1",
+    "grunt": "~0.4.5",
+    "grunt-blanket": "~0.0.8",
+    "blanket": "~1.1.6",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-test": "~0.11.0",
+    "grunt-notify": "~0.3.0",
+    "grunt-shell": "~0.7.0",
+    "chai": "*",
+    "mocha": "*"
+  },
+  "keywords": [
+    "cleaner", "clean", "empty", "arrays"
+  ]
+}

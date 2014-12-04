@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/dani/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/dani/.npm/objCleaner/0.1.0/package.tgz', '.' ]
+11 verbose tarball /Users/dani/.npm/objCleaner/0.1.0/package.tgz
+12 verbose folder .
+13 info prepublish objCleaner@0.1.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/dani/.npm/1f1177db-tar.lock
+16 silly lockFile 77a07dfb-npm-objCleaner-0-1-0-package-tgz tar:///Users/dani/.npm/objCleaner/0.1.0/package.tgz
+17 verbose lock tar:///Users/dani/.npm/objCleaner/0.1.0/package.tgz /Users/dani/.npm/77a07dfb-npm-objCleaner-0-1-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 77a07dfb-npm-objCleaner-0-1-0-package-tgz tar:///Users/dani/.npm/objCleaner/0.1.0/package.tgz
+21 silly lockFile 77a07dfb-npm-objCleaner-0-1-0-package-tgz tar:///Users/dani/.npm/objCleaner/0.1.0/package.tgz
+22 silly lockFile 1b850656-ani-npm-objCleaner-0-1-0-package /Users/dani/.npm/objCleaner/0.1.0/package
+23 verbose lock /Users/dani/.npm/objCleaner/0.1.0/package /Users/dani/.npm/1b850656-ani-npm-objCleaner-0-1-0-package.lock
+24 silly lockFile 1b850656-ani-npm-objCleaner-0-1-0-package /Users/dani/.npm/objCleaner/0.1.0/package
+25 silly lockFile 1b850656-ani-npm-objCleaner-0-1-0-package /Users/dani/.npm/objCleaner/0.1.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'objCleaner',
+28 silly publish   description: 'A little function to clean dirty arrays in Objects.',
+28 silly publish   version: '0.1.0',
+28 silly publish   homepage: 'https://github.com/danibram/objCleaner',
+28 silly publish   author: { name: 'Daniel Biedma Ramos', email: 'info@danibram.es' },
+28 silly publish   repository: { type: 'git', url: 'git://github.com/danibram/objCleaner.git' },
+28 silly publish   bugs: { url: 'https://github.com/danibram/objCleaner/issues' },
+28 silly publish   licenses:
+28 silly publish    [ { type: 'MIT',
+28 silly publish        url: 'https://github.com/danibram/objCleaner/blob/master/LICENSE-MIT' } ],
+28 silly publish   main: 'lib/objCleaner',
+28 silly publish   engines: { node: '>= 0.8.0' },
+28 silly publish   scripts: { test: 'grunt mochaTest' },
+28 silly publish   devDependencies:
+28 silly publish    { assert: '~1.1.1',
+28 silly publish      grunt: '~0.4.5',
+28 silly publish      'grunt-blanket': '~0.0.8',
+28 silly publish      blanket: '~1.1.6',
+28 silly publish      'grunt-contrib-jshint': '~0.10.0',
+28 silly publish      'grunt-contrib-watch': '~0.5.3',
+28 silly publish      'grunt-mocha-test': '~0.11.0',
+28 silly publish      'grunt-notify': '~0.3.0',
+28 silly publish      'grunt-shell': '~0.7.0',
+28 silly publish      chai: '*',
+28 silly publish      mocha: '*' },
+28 silly publish   keywords: [ 'cleaner', 'clean', 'empty', 'arrays' ],
+28 silly publish   readme: '# objCleaner  [![Dependency Status](https://david-dm.org/dani/objCleaner.svg)](https://david-dm.org/dani/objCleaner)\n\nA little function to clean dirty Objects, find any array with lenght one and and put his content without array.\n\n## Getting Started\nInstall the module with: `npm install objCleaner`\n\n```javascript\nvar objCleaner = new require(\'objCleaner\');\nobjCleaner(Object_to_clean); // Object_cleaned\n```\n\n\n## Examples\n\n```javascript\nvar test = [{\n    property1: \'\',\n    property2: \'\'\n}];\nvar result = objCleaner(test);\nvar result = {\n    property1: \'\',\n    property2: \'\'\n};\n```\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n_(Nothing yet)_\n\n## License\nCopyright (c) 2014 Daniel Biedma Ramos\nLicensed under the MIT license.\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   _id: 'objCleaner@0.1.0',
+28 silly publish   _shasum: 'da11b95687b0c41ede5d4cb27399a0f5cdf2abb9',
+28 silly publish   _from: '.' }
+29 verbose request where is /objCleaner
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 7db452bf513fb067
+32 verbose url raw /objCleaner
+33 verbose url resolving [ 'https://registry.npmjs.org/', './objCleaner' ]
+34 verbose url resolved https://registry.npmjs.org/objCleaner
+35 verbose request where is https://registry.npmjs.org/objCleaner
+36 info trying registry request attempt 1 at 09:59:11
+37 http PUT https://registry.npmjs.org/objCleaner
+38 http 403 https://registry.npmjs.org/objCleaner
+39 verbose headers { date: 'Thu, 04 Dec 2014 08:59:12 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '76',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-lhr6325-LHR',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1417683551.465335,VS0,VE631',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden New packages must have all-lowercase names: objCleaner
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 14.0.0
+44 error command "node" "/usr/local/bin/npm" "publish"
+45 error cwd /Users/dani/htdocs/nodeModules/objCleaner
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
