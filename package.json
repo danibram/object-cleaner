@@ -1,7 +1,7 @@
 {
   "name": "object-cleaner",
   "description": "A little function to clean dirty arrays in Objects.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/danibram/object-cleaner",
   "author": {
     "name": "Daniel Biedma Ramos",
@@ -28,7 +28,6 @@
     "test": "grunt mochaTest"
   },
   "devDependencies": {
-    "assert": "~1.1.1",
     "grunt": "~0.4.5",
     "grunt-blanket": "~0.0.8",
     "blanket": "~1.1.6",
