@@ -4,25 +4,12 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    shell: {
-      coverage: {
-        command: './node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec test/**/*.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js'
-      }
-    },
     mochaTest: {
       test: {
         options: {
           reporter: 'spec'
         },
-        src: ['test/**/*.js']
-      },
-      coverage: {
-        options: {
-          reporter: 'html-cov',
-          quiet: true,
-          captureFile: 'coverage/coverage.html'
-        },
-        src: ['test/**/*.js']
+        src: ['objCleaner.test.js']
       }
     },
     jshint: {
@@ -33,10 +20,10 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
       lib: {
-        src: ['lib/**/*.js']
+        src: ['main.js']
       },
       test: {
-        src: ['test/**/*.js']
+        src: ['objCleaner.test.js']
       },
     },
     watch: {
@@ -61,7 +48,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-shell');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'mochaTest']);
