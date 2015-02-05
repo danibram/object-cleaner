@@ -1,7 +1,7 @@
 {
   "name": "object-cleaner",
   "description": "A little function to clean dirty arrays in Objects.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/danibram/object-cleaner",
   "author": {
     "name": "Daniel Biedma Ramos",

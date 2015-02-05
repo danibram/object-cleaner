@@ -43,17 +43,20 @@ var cleaner = function(obj) {
         return array;
     };
 
-    var arrKeys = Object.keys(obj);
-    for (var i = 0; i < arrKeys.length; i++) {
-        var field = arrKeys[i];
-        if (Object.prototype.toString.call(obj[field]) === '[object Object]'){
-            obj[field] = cleanObject(obj[field]);
-        } else if (Object.prototype.toString.call(obj[field]) === '[object Array]'){
-            obj[field] = cleanObject(obj[field]);
-        } else {
-            obj[field] = obj[field];
+    if (obj){
+        var arrKeys = Object.keys(obj);
+        for (var i = 0; i < arrKeys.length; i++) {
+            var field = arrKeys[i];
+            if (Object.prototype.toString.call(obj[field]) === '[object Object]'){
+                obj[field] = cleanObject(obj[field]);
+            } else if (Object.prototype.toString.call(obj[field]) === '[object Array]'){
+                obj[field] = cleanObject(obj[field]);
+            } else {
+                obj[field] = obj[field];
+            }
         }
     }
+
 
     return obj;
 };
